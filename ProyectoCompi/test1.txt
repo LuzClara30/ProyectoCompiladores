@@ -1,0 +1,9 @@
+let myArray = [1,2,3,4];
+push(myArray,[5,6,7]);
+
+myArray[true];
+myArray["hola"];
+
+let var = 10;
+last(var);
+
