@@ -7,7 +7,7 @@ class Node:
 class HashMap:
     def __init__(self):
         self.store = [None for _ in range(16)]
-    def get(self, key):
+    def getData(self, key):
         index = hash(key) & 15
         if self.store[index] is None:
             return None
@@ -20,7 +20,7 @@ class HashMap:
                     n = n.next
                 else:
                     return None
-    def put(self, key, value):
+    def setData(self, key, value):
         nd = Node(key, value)
         index = hash(key) & 15
         n = self.store[index]

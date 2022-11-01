@@ -17,13 +17,14 @@ class REPL:
         else:
             self.data = HashMap.HashMap()
             self.stack = []
+            self.arrayData = [self.data]
             REPL.instance = self
 
     def getData(self, var):
-        return self.data.get(var)
+        return self.data.getData(var)
 
     def setData(self, key, value):
-        self.data.put(key, value)
+        self.data.setData(key, value)
 
     def stackPush(self, value):
         self.stack.append(value)
@@ -33,4 +34,5 @@ class REPL:
 
     def returnStack(self):
         return self.stack
-
+    def addArrayData(self):
+        self.arrayData.append(HashMap.HashMap())
