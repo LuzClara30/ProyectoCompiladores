@@ -21,9 +21,11 @@ class REPL:
             REPL.instance = self
 
     def getData(self, var):
+        #return self.arrayData[0].getData(var)
         return self.data.getData(var)
 
     def setData(self, key, value):
+        #self.arrayData[0].setData(key,value)
         self.data.setData(key, value)
 
     def stackPush(self, value):
