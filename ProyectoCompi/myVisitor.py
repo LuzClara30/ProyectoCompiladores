@@ -1,5 +1,4 @@
 from antlr4.tree.Tree import TerminalNodeImpl
-
 from REPL import REPL
 from generated.MonkeyParser import MonkeyParser
 from generated.MonkeyParserVisitor import MonkeyParserVisitor
@@ -7,7 +6,6 @@ from generated.MonkeyParserVisitor import MonkeyParserVisitor
 
 class myVisitor(MonkeyParserVisitor):
     mainRepl: REPL = REPL()
-
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
 
