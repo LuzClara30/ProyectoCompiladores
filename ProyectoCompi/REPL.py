@@ -34,5 +34,17 @@ class REPL:
 
     def returnStack(self):
         return self.stack
+
     def addArrayData(self):
         self.arrayData.append(HashMap.HashMap())
+
+    def getArrayData(self, num):
+        self.arrayData.pop(num)
+
+    def searchData(self, variable):
+        for item in reversed(self.arrayData):
+            try:
+                valor = item.getData(variable)
+                return valor
+            except:
+                print("")

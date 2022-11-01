@@ -6,9 +6,9 @@ from generated.MonkeyParserVisitor import MonkeyParserVisitor
 
 class myVisitor(MonkeyParserVisitor):
     mainRepl: REPL = REPL()
+
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
-
     # Visit a parse tree produced by MonkeyParser#programAST.
     def visitProgramAST(self, ctx: MonkeyParser.ProgramASTContext):
         return self.visitChildren(ctx)
