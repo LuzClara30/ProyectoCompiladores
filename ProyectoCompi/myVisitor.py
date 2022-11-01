@@ -286,7 +286,8 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#fnctnLitPrmtvExprsAST.
     def visitFnctnLitPrmtvExprsAST(self, ctx: MonkeyParser.FnctnLitPrmtvExprsASTContext):
-        return self.visitChildren(ctx)
+        self.mainRepl.stackPush(ctx)
+        return None
 
     # Visit a parse tree produced by MonkeyParser#hshLitPrmtvExprsAST.
     def visitHshLitPrmtvExprsAST(self, ctx: MonkeyParser.HshLitPrmtvExprsASTContext):
