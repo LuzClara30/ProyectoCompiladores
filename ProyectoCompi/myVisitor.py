@@ -340,6 +340,7 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#cmmaIdMrIdsAST.
     def visitCmmaIdMrIdsAST(self, ctx: MonkeyParser.CmmaIdMrIdsASTContext):
+
         return self.visitChildren(ctx)
 
     # Visit a parse tree produced by MonkeyParser#hshCtntMrHshCtntHshLitAST.
