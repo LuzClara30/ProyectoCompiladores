@@ -69,8 +69,10 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(ctx.expression())
             if len(self.mainRepl.returnStack()) != 0:
                 val = self.mainRepl.stackPop()
-                if val != 'True' or 'False':
+                if val != "True" and val != "False":
                     print(val)
+
+
 
         except:
             raise Exception("Error en la expresión escrita")
