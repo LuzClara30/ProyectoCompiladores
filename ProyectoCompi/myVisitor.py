@@ -26,12 +26,10 @@ class myVisitor(MonkeyParserVisitor):
             for element in parametros:
                 self.mainRepl.insertData(element, lista[indice])
                 indice = indice+1
-            print(self.mainRepl.searchData('a'))
-            print(self.mainRepl.searchData('x'))
-            print("Coinciden")
             self.visit(func.getChild(4))
+            self.mainRepl.cleanData()
         else:
-            print("NO COINCIDEN")
+            print("Error en la cantidad de parametros ingresada en la función")
 
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
@@ -69,8 +67,10 @@ class myVisitor(MonkeyParserVisitor):
     def visitExprsExprsStatAST(self, ctx: MonkeyParser.ExprsExprsStatASTContext):
         try:
             self.visit(ctx.expression())
-            val = self.mainRepl.stackPop()
-            print(val)
+            if len(self.mainRepl.returnStack()) != 0:
+                val = self.mainRepl.stackPop()
+                if val != 'True' or 'False':
+                    print(val)
 
         except:
             raise Exception("Error en la expresión escrita")
@@ -216,9 +216,8 @@ class myVisitor(MonkeyParserVisitor):
                 self.lista(ctx.getChild(1))
                 parametros = self.mainRepl.stackPop()
                 funcion = self.mainRepl.stackPop()
-                print(parametros)
                 self.function(funcion, parametros)
-            if l.arrayFunctions() is not None:
+            elif l.arrayFunctions() is not None:
                 if self.visit(l.arrayFunctions()) == 1:
                     listLen = []
                     l1 = self.visit(ctx.callExpression())
@@ -242,8 +241,6 @@ class myVisitor(MonkeyParserVisitor):
                         self.visit(element)
                         listLen2.append(self.mainRepl.stackPop())
                     self.mainRepl.stackPush(listLen + listLen2)
-
-
         return None
 
     # Visit a parse tree produced by MonkeyParser#brckExprsElmtAccsAST.

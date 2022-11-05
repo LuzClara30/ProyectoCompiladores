@@ -1,3 +1,21 @@
-let x = 123;
-let add = fn(a,b){return a+b;};
-add(1,1);
+let texto = "texto global";
+let funcA =
+fn(a) {
+	let n = a*2;
+	if(a==1){
+		return n;
+	}
+	else{
+		let funcB =
+		fn(b){
+		puts(texto);
+		puts(n);
+		funcA(b);
+
+		}
+		funcB(a-1)
+		
+	};
+
+};
+funcA(4);

@@ -43,6 +43,8 @@ class REPL:
     def getArrayData(self, num):
         self.arrayData.pop(num)
 
+    def cleanData(self):
+        self.arrayData.pop()
     def searchData(self, variable):
         for item in reversed(self.arrayData):
             try:
