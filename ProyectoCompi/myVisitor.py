@@ -20,7 +20,6 @@ class myVisitor(MonkeyParserVisitor):
     def function(self, func, lista):
         self.visit(func.getChild(2))
         parametros = self.mainRepl.stackPop()
-        print("FUNCION PARAMETROS", parametros)
         if len(lista) == len(parametros):
             print("Coinciden")
         else:
@@ -359,9 +358,10 @@ class myVisitor(MonkeyParserVisitor):
         ListReturn = []
         ListReturn.append(TerminalNodeImpl(ctx.children[0]).getSymbol().symbol.text)
         ListRet = []
-        for element in ctx.moreIdentifiers().children:
-            if TerminalNodeImpl(element).getSymbol().symbol.text != ',':
-                ListRet.append(TerminalNodeImpl(element).getSymbol().symbol.text)
+        if ctx.moreIdentifiers().children is not None:
+            for element in ctx.moreIdentifiers().children:
+                if TerminalNodeImpl(element).getSymbol().symbol.text != ',':
+                    ListRet.append(TerminalNodeImpl(element).getSymbol().symbol.text)
         self.mainRepl.stackPush(ListReturn + ListRet)
         return None
 

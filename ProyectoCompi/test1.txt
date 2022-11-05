@@ -1,2 +1,2 @@
-let add = fn(a){return a;};
-add(1,1);
+let add = fn(a,b,c){return a;};
+add(1);
