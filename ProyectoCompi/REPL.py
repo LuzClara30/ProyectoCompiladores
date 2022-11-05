@@ -49,4 +49,11 @@ class REPL:
                 valor = item.getData(variable)
                 return valor
             except:
-                print("hols")
+                print("La variable a buscar en el DATA no existe")
+
+    def insertData(self, key, variable):
+        for item in reversed(self.arrayData):
+            try:
+                item.setData(key, variable)
+            except:
+                print("No se pudo insertar el valor")

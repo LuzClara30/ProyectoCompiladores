@@ -47,7 +47,7 @@ class myVisitor(MonkeyParserVisitor):
     def visitIdEqLetStatAST(self, ctx: MonkeyParser.IdEqLetStatASTContext):
         try:
             self.visit(ctx.expression())
-            self.mainRepl.setData(ctx.ID().getText(), self.mainRepl.stackPop())
+            self.mainRepl.insertData(ctx.ID().getText(), self.mainRepl.stackPop())
         except:
             print("An exception occurred")
 
@@ -265,7 +265,8 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#idPrmtvAST.
     def visitIdPrmtvAST(self, ctx: MonkeyParser.IdPrmtvASTContext):
-        value = self.mainRepl.getData(ctx.ID().getText())
+        value = self.mainRepl.searchData(ctx.ID().getText())
+
         if value is not None:
             self.mainRepl.stackPush(value)
         else:
