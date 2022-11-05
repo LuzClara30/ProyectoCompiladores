@@ -49,4 +49,4 @@ class REPL:
                 valor = item.getData(variable)
                 return valor
             except:
-                print("")
+                print("hols")

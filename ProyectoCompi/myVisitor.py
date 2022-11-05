@@ -6,7 +6,17 @@ from generated.MonkeyParserVisitor import MonkeyParserVisitor
 
 class myVisitor(MonkeyParserVisitor):
     mainRepl: REPL = REPL()
-
+    def lista(self, ctx):
+        ListReturn = []
+        el = self.visit(ctx.expressionList())
+        self.visit(el.expression())
+        ListReturn.append(self.mainRepl.stackPop())
+        l2 = self.visit(el.moreExpressions())
+        ListRet = []
+        for element in l2.expression():
+            self.visit(element)
+            ListRet.append(self.mainRepl.stackPop())
+        self.mainRepl.stackPush(ListReturn + ListRet)
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
     # Visit a parse tree produced by MonkeyParser#programAST.
@@ -184,6 +194,13 @@ class myVisitor(MonkeyParserVisitor):
         if ctx.elementAccess():
             self.visit(ctx.elementAccess())
         elif ctx.callExpression():
+            ctxname = ctx.getChild(0).__class__.__name__
+            if ctxname == 'IdPrmtvASTContext':
+                self.visit(ctx.getChild(1))
+                self.lista(ctx.getChild(1))
+                parametros = self.mainRepl.stackPop()
+                print(parametros)
+
             if l.arrayFunctions() is not None:
                 if self.visit(l.arrayFunctions()) == 1:
                     listLen = []
@@ -208,6 +225,8 @@ class myVisitor(MonkeyParserVisitor):
                         self.visit(element)
                         listLen2.append(self.mainRepl.stackPop())
                     self.mainRepl.stackPush(listLen + listLen2)
+
+
         return None
 
     # Visit a parse tree produced by MonkeyParser#brckExprsElmtAccsAST.
@@ -286,8 +305,8 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#fnctnLitPrmtvExprsAST.
     def visitFnctnLitPrmtvExprsAST(self, ctx: MonkeyParser.FnctnLitPrmtvExprsASTContext):
-        self.mainRepl.stackPush(ctx)
-        return None
+        return self.visitChildren(ctx)
+
 
     # Visit a parse tree produced by MonkeyParser#hshLitPrmtvExprsAST.
     def visitHshLitPrmtvExprsAST(self, ctx: MonkeyParser.HshLitPrmtvExprsASTContext):
@@ -319,21 +338,12 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#brckExprsLstarryLitAST.
     def visitBrckExprsLstarryLitAST(self, ctx: MonkeyParser.BrckExprsLstarryLitASTContext):
-        ListReturn = []
-        el = self.visit(ctx.expressionList())
-        self.visit(el.expression())
-        ListReturn.append(self.mainRepl.stackPop())
-        l2 = self.visit(el.moreExpressions())
-        ListRet = []
-        for element in l2.expression():
-            self.visit(element)
-            ListRet.append(self.mainRepl.stackPop())
-        self.mainRepl.stackPush(ListReturn + ListRet)
+        self.lista(ctx)
         return None
     # Visit a parse tree produced by MonkeyParser#fnctnPrmtsBlckStatFnctnLitAST.
     def visitFnctnPrmtsBlckStatFnctnLitAST(self, ctx: MonkeyParser.FnctnPrmtsBlckStatFnctnLitASTContext):
-        return self.visitChildren(ctx)
-
+        self.mainRepl.stackPush(ctx)
+        return None
     # Visit a parse tree produced by MonkeyParser#mrIdsFnctnPrmtsAST.
     def visitMrIdsFnctnPrmtsAST(self, ctx: MonkeyParser.MrIdsFnctnPrmtsASTContext):
         return self.visitChildren(ctx)
