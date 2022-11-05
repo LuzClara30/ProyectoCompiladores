@@ -40,8 +40,8 @@ class REPL:
     def addArrayData(self):
         self.arrayData.append(HashMap.HashMap())
 
-    def getArrayData(self, num):
-        self.arrayData.pop(num)
+    def getArrayData(self):
+        return self.arrayData
 
     def cleanData(self):
         self.arrayData.pop()

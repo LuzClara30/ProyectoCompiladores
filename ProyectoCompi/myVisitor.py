@@ -61,8 +61,13 @@ class myVisitor(MonkeyParserVisitor):
 
     # Visit a parse tree produced by MonkeyParser#exprsRtrnStatAST.
     def visitExprsRtrnStatAST(self, ctx: MonkeyParser.ExprsRtrnStatASTContext):
-        return self.visitChildren(ctx)
-
+        self.visit(ctx.expression())
+        if len(self.mainRepl.returnStack()) != 0:
+            val = self.mainRepl.stackPop()
+            if len(self.mainRepl.getArrayData()) == 1:
+                print(val)
+            self.mainRepl.stackPush(val)
+        return None
     # Visit a parse tree produced by MonkeyParser#exprsExprsStatAST.
     def visitExprsExprsStatAST(self, ctx: MonkeyParser.ExprsExprsStatASTContext):
         try:
@@ -71,9 +76,6 @@ class myVisitor(MonkeyParserVisitor):
                 val = self.mainRepl.stackPop()
                 if val != "True" and val != "False":
                     print(val)
-
-
-
         except:
             raise Exception("Error en la expresión escrita")
         return None
