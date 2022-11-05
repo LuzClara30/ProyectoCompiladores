@@ -27,6 +27,7 @@ class myVisitor(MonkeyParserVisitor):
                 self.mainRepl.insertData(element, lista[indice])
                 indice = indice+1
             print(self.mainRepl.searchData('a'))
+            print(self.mainRepl.searchData('x'))
             print("Coinciden")
             self.visit(func.getChild(4))
         else:

@@ -47,7 +47,8 @@ class REPL:
         for item in reversed(self.arrayData):
             try:
                 valor = item.getData(variable)
-                return valor
+                if valor is not None:
+                    return valor
             except:
                 print("La variable a buscar en el DATA no existe")
 
