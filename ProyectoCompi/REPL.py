@@ -55,5 +55,6 @@ class REPL:
         for item in reversed(self.arrayData):
             try:
                 item.setData(key, variable)
+                break
             except:
                 print("No se pudo insertar el valor")

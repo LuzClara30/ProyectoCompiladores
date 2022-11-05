@@ -21,7 +21,14 @@ class myVisitor(MonkeyParserVisitor):
         self.visit(func.getChild(2))
         parametros = self.mainRepl.stackPop()
         if len(lista) == len(parametros):
+            indice = 0
+            self.mainRepl.addArrayData()
+            for element in parametros:
+                self.mainRepl.insertData(element, lista[indice])
+                indice = indice+1
+            print(self.mainRepl.searchData('a'))
             print("Coinciden")
+            self.visit(func.getChild(4))
         else:
             print("NO COINCIDEN")
 
