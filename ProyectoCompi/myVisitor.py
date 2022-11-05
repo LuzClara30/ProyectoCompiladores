@@ -17,6 +17,15 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(element)
             ListRet.append(self.mainRepl.stackPop())
         self.mainRepl.stackPush(ListReturn + ListRet)
+    def function(self, func, lista):
+        self.visit(func.getChild(2))
+        parametros = self.mainRepl.stackPop()
+        print("FUNCION PARAMETROS", parametros)
+        if len(lista) == len(parametros):
+            print("Coinciden")
+        else:
+            print("NO COINCIDEN")
+
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
     # Visit a parse tree produced by MonkeyParser#programAST.
@@ -199,8 +208,9 @@ class myVisitor(MonkeyParserVisitor):
                 self.visit(ctx.getChild(1))
                 self.lista(ctx.getChild(1))
                 parametros = self.mainRepl.stackPop()
+                funcion = self.mainRepl.stackPop()
                 print(parametros)
-
+                self.function(funcion, parametros)
             if l.arrayFunctions() is not None:
                 if self.visit(l.arrayFunctions()) == 1:
                     listLen = []
@@ -346,12 +356,18 @@ class myVisitor(MonkeyParserVisitor):
         return None
     # Visit a parse tree produced by MonkeyParser#mrIdsFnctnPrmtsAST.
     def visitMrIdsFnctnPrmtsAST(self, ctx: MonkeyParser.MrIdsFnctnPrmtsASTContext):
-        return self.visitChildren(ctx)
+        ListReturn = []
+        ListReturn.append(TerminalNodeImpl(ctx.children[0]).getSymbol().symbol.text)
+        ListRet = []
+        for element in ctx.moreIdentifiers().children:
+            if TerminalNodeImpl(element).getSymbol().symbol.text != ',':
+                ListRet.append(TerminalNodeImpl(element).getSymbol().symbol.text)
+        self.mainRepl.stackPush(ListReturn + ListRet)
+        return None
 
     # Visit a parse tree produced by MonkeyParser#cmmaIdMrIdsAST.
     def visitCmmaIdMrIdsAST(self, ctx: MonkeyParser.CmmaIdMrIdsASTContext):
-
-        return self.visitChildren(ctx)
+        return ctx
 
     # Visit a parse tree produced by MonkeyParser#hshCtntMrHshCtntHshLitAST.
     def visitHshCtntMrHshCtntHshLitAST(self, ctx: MonkeyParser.HshCtntMrHshCtntHshLitASTContext):
