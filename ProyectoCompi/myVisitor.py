@@ -250,7 +250,8 @@ class myVisitor(MonkeyParserVisitor):
                         listLen2.append(self.mainRepl.stackPop())
                     if variable != "":
                         self.mainRepl.insertData(variable, (listLen+listLen2))
-                    self.mainRepl.stackPush(listLen + listLen2)
+                    else:
+                        self.mainRepl.stackPush(listLen + listLen2)
         return None
 
     # Visit a parse tree produced by MonkeyParser#brckExprsElmtAccsAST.
