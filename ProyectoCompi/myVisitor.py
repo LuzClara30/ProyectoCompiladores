@@ -134,7 +134,7 @@ class myVisitor(MonkeyParserVisitor):
                     if (op1 <= op2):
                         self.mainRepl.stackPush("True")
                     else:
-                        self.mainRepl.stackPush("False");
+                        self.mainRepl.stackPush("False")
                 else:
                     raise Exception(
                         "Type error between " + op1.getClass().getSimpleName() + " and " + op2.getClass().getSimpleName() + " in expression")
