@@ -238,12 +238,18 @@ class myVisitor(MonkeyParserVisitor):
                     a = self.visit(ctx.callExpression())
                     b = self.visit(a.expressionList())
                     self.visit(b.expression())
+                    variable = ""
+                    ctxname1 = ctx.children[1].children[1].children[0].children[0].children[0].children[0].children[0].__class__.__name__
+                    if ctxname1 == 'IdPrmtvASTContext':
+                        variable = TerminalNodeImpl(ctx.children[1].children[1].children[0].children[0].children[0].children[0].children[0].children[0]).getSymbol().symbol.text
                     listLen = self.mainRepl.stackPop()
                     c = self.visit(b.moreExpressions())
                     listLen2 = []
                     for element in c.expression():
                         self.visit(element)
                         listLen2.append(self.mainRepl.stackPop())
+                    if variable != "":
+                        self.mainRepl.insertData(variable, (listLen+listLen2))
                     self.mainRepl.stackPush(listLen + listLen2)
         return None
 
