@@ -29,7 +29,7 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(func.getChild(4))
             self.mainRepl.cleanData()
         else:
-            print("Error en la cantidad de parametros ingresada en la función")
+            print("ERROR: la cantidad de parametros en la función declarada y llamada no coinciden.")
 
     def myVisitor(self):
         self.mainRepl = REPL.getInstance()
@@ -77,7 +77,7 @@ class myVisitor(MonkeyParserVisitor):
                 if val != "True" and val != "False":
                     print(val)
         except:
-            raise Exception("Error en la expresión escrita")
+            raise Exception("Error en la expresión escrita.")
         return None
     # Visit a parse tree produced by MonkeyParser#addExprsExprsAST.
     def visitAddExprsExprsAST(self, ctx: MonkeyParser.AddExprsExprsASTContext):
@@ -327,7 +327,7 @@ class myVisitor(MonkeyParserVisitor):
                 list.pop(0)
                 self.mainRepl.stackPush(list)
             else:
-                raise Exception("la función no corresponde a las funciones de listas")
+                raise Exception("ERROR: la función no corresponde a las funciones de listas.")
 
     # Visit a parse tree produced by MonkeyParser#fnctnLitPrmtvExprsAST.
     def visitFnctnLitPrmtvExprsAST(self, ctx: MonkeyParser.FnctnLitPrmtvExprsASTContext):
@@ -360,7 +360,7 @@ class myVisitor(MonkeyParserVisitor):
         elif ctx.PUSH() is not None:
             return 5
         else:
-            raise Exception("Error in ArrayFunction")
+            raise Exception("ERROR: la función llamada no corresponde a un ArrayFunction.")
 
     # Visit a parse tree produced by MonkeyParser#brckExprsLstarryLitAST.
     def visitBrckExprsLstarryLitAST(self, ctx: MonkeyParser.BrckExprsLstarryLitASTContext):
@@ -439,7 +439,7 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(ctx.expression())
 
         except:
-            raise Exception("Error en la impresión")
+            raise Exception("ERROR: la impresión no se puede realizar.")
 
         return None
 
