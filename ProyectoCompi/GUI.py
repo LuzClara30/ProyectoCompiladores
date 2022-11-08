@@ -111,7 +111,7 @@ class App():
         try:
             tree = parser.program()
             vist = myVisitor()
-            vist.visit(tree);
+            vist.visit(tree)
             print("*** Compilacion terminada. ***\n")
 
         except Exception as e:
