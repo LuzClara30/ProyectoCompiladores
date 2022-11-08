@@ -35,7 +35,7 @@ primitiveExpression: INT                                                        
 arrayFunctions: LEN | FIRST | LAST | REST | PUSH                                #grouparryFnctnAST;
 arrayLiteral:   BRACKETSOP expressionList BRACKETSCL                            #brckExprsLstarryLitAST;
 functionLiteral: FN POPEN functionParameters PCLOSE blockStatement              #fnctnPrmtsBlckStatFnctnLitAST;
-functionParameters: ID moreIdentifiers                                          #mrIdsFnctnPrmtsAST;
+functionParameters: ((ID moreIdentifiers) | )                                   #mrIdsFnctnPrmtsAST;
 moreIdentifiers: (COMMA ID)*                                                    #cmmaIdMrIdsAST;
 hashLiteral: CURLYOP hashContent moreHashContent CURLYCL                        #hshCtntMrHshCtntHshLitAST;
 hashContent	: expression COLON expression                                       #exprsClnExprsHshCtntAST;

@@ -216,11 +216,17 @@ class myVisitor(MonkeyParserVisitor):
         elif ctx.callExpression():
             ctxname = ctx.getChild(0).__class__.__name__
             if ctxname == 'IdPrmtvASTContext':
-                self.visit(ctx.getChild(1))
-                self.lista(ctx.getChild(1))
-                parametros = self.mainRepl.stackPop()
-                funcion = self.mainRepl.stackPop()
-                self.function(funcion, parametros)
+                ctxparname = ctx.getChild(1).getChild(1).__class__.__name__
+                if ctxparname == 'EmptExprsLstASTASTContext':
+                    self.visit(ctx.getChild(0))
+                    funcion = self.mainRepl.stackPop()
+                    self.function(funcion, [])
+                else:
+                        self.visit(ctx.getChild(1))
+                        self.lista(ctx.getChild(1))
+                        parametros = self.mainRepl.stackPop()
+                        funcion = self.mainRepl.stackPop()
+                        self.function(funcion, parametros)
             elif l.arrayFunctions() is not None:
                 if self.visit(l.arrayFunctions()) == 1:
                     listLen = []
@@ -373,6 +379,9 @@ class myVisitor(MonkeyParserVisitor):
     # Visit a parse tree produced by MonkeyParser#mrIdsFnctnPrmtsAST.
     def visitMrIdsFnctnPrmtsAST(self, ctx: MonkeyParser.MrIdsFnctnPrmtsASTContext):
         ListReturn = []
+        if ctx.children is None:
+            self.mainRepl.stackPush([])
+            return None
         ListReturn.append(TerminalNodeImpl(ctx.children[0]).getSymbol().symbol.text)
         ListRet = []
         if ctx.moreIdentifiers().children is not None:

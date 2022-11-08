@@ -1,4 +1,4 @@
-# Generated from C:/Users/Usuario7/PycharmProjects/ProyectoCompi\MonkeyParser.g4 by ANTLR 4.10.1
+# Generated from C:/Users/Usuario7/Documents/GitHub/ProyectoCompiladores/ProyectoCompi\MonkeyParser.g4 by ANTLR 4.10.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,39,223,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,39,225,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
@@ -22,69 +22,70 @@ def serializedATN():
         11,3,11,121,8,11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,1,13,1,14,1,
         14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,14,1,
         14,1,14,1,14,3,14,148,8,14,1,15,1,15,1,16,1,16,1,16,1,16,1,17,1,
-        17,1,17,1,17,1,17,1,17,1,18,1,18,1,18,1,19,1,19,5,19,167,8,19,10,
-        19,12,19,170,9,19,1,20,1,20,1,20,1,20,1,20,1,21,1,21,1,21,1,21,1,
-        22,1,22,5,22,183,8,22,10,22,12,22,186,9,22,1,23,1,23,1,23,1,23,3,
-        23,192,8,23,1,24,1,24,5,24,196,8,24,10,24,12,24,199,9,24,1,25,1,
-        25,1,25,1,25,1,25,1,26,1,26,1,26,1,26,1,26,1,26,3,26,212,8,26,1,
-        27,1,27,5,27,216,8,27,10,27,12,27,219,9,27,1,27,1,27,1,27,0,0,28,
-        0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,
-        46,48,50,52,54,0,4,2,0,7,8,13,15,1,0,3,4,1,0,1,2,1,0,27,31,222,0,
-        59,1,0,0,0,2,67,1,0,0,0,4,69,1,0,0,0,6,76,1,0,0,0,8,81,1,0,0,0,10,
-        86,1,0,0,0,12,93,1,0,0,0,14,96,1,0,0,0,16,103,1,0,0,0,18,106,1,0,
-        0,0,20,113,1,0,0,0,22,116,1,0,0,0,24,122,1,0,0,0,26,126,1,0,0,0,
-        28,147,1,0,0,0,30,149,1,0,0,0,32,151,1,0,0,0,34,155,1,0,0,0,36,161,
-        1,0,0,0,38,168,1,0,0,0,40,171,1,0,0,0,42,176,1,0,0,0,44,184,1,0,
-        0,0,46,191,1,0,0,0,48,197,1,0,0,0,50,200,1,0,0,0,52,205,1,0,0,0,
-        54,213,1,0,0,0,56,58,3,2,1,0,57,56,1,0,0,0,58,61,1,0,0,0,59,57,1,
-        0,0,0,59,60,1,0,0,0,60,1,1,0,0,0,61,59,1,0,0,0,62,63,5,21,0,0,63,
-        68,3,4,2,0,64,65,5,26,0,0,65,68,3,6,3,0,66,68,3,8,4,0,67,62,1,0,
-        0,0,67,64,1,0,0,0,67,66,1,0,0,0,68,3,1,0,0,0,69,70,5,34,0,0,70,71,
-        5,5,0,0,71,74,3,10,5,0,72,75,5,10,0,0,73,75,1,0,0,0,74,72,1,0,0,
-        0,74,73,1,0,0,0,75,5,1,0,0,0,76,79,3,10,5,0,77,80,5,10,0,0,78,80,
-        1,0,0,0,79,77,1,0,0,0,79,78,1,0,0,0,80,7,1,0,0,0,81,84,3,10,5,0,
-        82,85,5,10,0,0,83,85,1,0,0,0,84,82,1,0,0,0,84,83,1,0,0,0,85,9,1,
-        0,0,0,86,87,3,14,7,0,87,88,3,12,6,0,88,11,1,0,0,0,89,90,7,0,0,0,
-        90,92,3,14,7,0,91,89,1,0,0,0,92,95,1,0,0,0,93,91,1,0,0,0,93,94,1,
-        0,0,0,94,13,1,0,0,0,95,93,1,0,0,0,96,97,3,18,9,0,97,98,3,16,8,0,
-        98,15,1,0,0,0,99,100,7,1,0,0,100,102,3,18,9,0,101,99,1,0,0,0,102,
-        105,1,0,0,0,103,101,1,0,0,0,103,104,1,0,0,0,104,17,1,0,0,0,105,103,
-        1,0,0,0,106,107,3,22,11,0,107,108,3,20,10,0,108,19,1,0,0,0,109,110,
-        7,2,0,0,110,112,3,22,11,0,111,109,1,0,0,0,112,115,1,0,0,0,113,111,
-        1,0,0,0,113,114,1,0,0,0,114,21,1,0,0,0,115,113,1,0,0,0,116,120,3,
-        28,14,0,117,121,3,24,12,0,118,121,3,26,13,0,119,121,1,0,0,0,120,
-        117,1,0,0,0,120,118,1,0,0,0,120,119,1,0,0,0,121,23,1,0,0,0,122,123,
-        5,16,0,0,123,124,3,10,5,0,124,125,5,17,0,0,125,25,1,0,0,0,126,127,
-        5,11,0,0,127,128,3,46,23,0,128,129,5,12,0,0,129,27,1,0,0,0,130,148,
-        5,35,0,0,131,148,5,36,0,0,132,148,5,34,0,0,133,148,5,22,0,0,134,
-        148,5,23,0,0,135,136,5,11,0,0,136,137,3,10,5,0,137,138,5,12,0,0,
-        138,148,1,0,0,0,139,148,3,32,16,0,140,141,3,30,15,0,141,142,3,46,
-        23,0,142,148,1,0,0,0,143,148,3,34,17,0,144,148,3,40,20,0,145,148,
-        3,50,25,0,146,148,3,52,26,0,147,130,1,0,0,0,147,131,1,0,0,0,147,
-        132,1,0,0,0,147,133,1,0,0,0,147,134,1,0,0,0,147,135,1,0,0,0,147,
-        139,1,0,0,0,147,140,1,0,0,0,147,143,1,0,0,0,147,144,1,0,0,0,147,
-        145,1,0,0,0,147,146,1,0,0,0,148,29,1,0,0,0,149,150,7,3,0,0,150,31,
-        1,0,0,0,151,152,5,16,0,0,152,153,3,46,23,0,153,154,5,17,0,0,154,
-        33,1,0,0,0,155,156,5,32,0,0,156,157,5,11,0,0,157,158,3,36,18,0,158,
-        159,5,12,0,0,159,160,3,54,27,0,160,35,1,0,0,0,161,162,5,34,0,0,162,
-        163,3,38,19,0,163,37,1,0,0,0,164,165,5,18,0,0,165,167,5,34,0,0,166,
-        164,1,0,0,0,167,170,1,0,0,0,168,166,1,0,0,0,168,169,1,0,0,0,169,
-        39,1,0,0,0,170,168,1,0,0,0,171,172,5,19,0,0,172,173,3,42,21,0,173,
-        174,3,44,22,0,174,175,5,20,0,0,175,41,1,0,0,0,176,177,3,10,5,0,177,
-        178,5,9,0,0,178,179,3,10,5,0,179,43,1,0,0,0,180,181,5,18,0,0,181,
-        183,3,42,21,0,182,180,1,0,0,0,183,186,1,0,0,0,184,182,1,0,0,0,184,
-        185,1,0,0,0,185,45,1,0,0,0,186,184,1,0,0,0,187,188,3,10,5,0,188,
-        189,3,48,24,0,189,192,1,0,0,0,190,192,1,0,0,0,191,187,1,0,0,0,191,
-        190,1,0,0,0,192,47,1,0,0,0,193,194,5,18,0,0,194,196,3,10,5,0,195,
-        193,1,0,0,0,196,199,1,0,0,0,197,195,1,0,0,0,197,198,1,0,0,0,198,
-        49,1,0,0,0,199,197,1,0,0,0,200,201,5,33,0,0,201,202,5,11,0,0,202,
-        203,3,10,5,0,203,204,5,12,0,0,204,51,1,0,0,0,205,206,5,24,0,0,206,
-        207,3,10,5,0,207,211,3,54,27,0,208,209,5,25,0,0,209,212,3,54,27,
-        0,210,212,1,0,0,0,211,208,1,0,0,0,211,210,1,0,0,0,212,53,1,0,0,0,
-        213,217,5,19,0,0,214,216,3,2,1,0,215,214,1,0,0,0,216,219,1,0,0,0,
-        217,215,1,0,0,0,217,218,1,0,0,0,218,220,1,0,0,0,219,217,1,0,0,0,
-        220,221,5,20,0,0,221,55,1,0,0,0,16,59,67,74,79,84,93,103,113,120,
-        147,168,184,191,197,211,217
+        17,1,17,1,17,1,17,1,17,1,18,1,18,1,18,3,18,165,8,18,1,19,1,19,5,
+        19,169,8,19,10,19,12,19,172,9,19,1,20,1,20,1,20,1,20,1,20,1,21,1,
+        21,1,21,1,21,1,22,1,22,5,22,185,8,22,10,22,12,22,188,9,22,1,23,1,
+        23,1,23,1,23,3,23,194,8,23,1,24,1,24,5,24,198,8,24,10,24,12,24,201,
+        9,24,1,25,1,25,1,25,1,25,1,25,1,26,1,26,1,26,1,26,1,26,1,26,3,26,
+        214,8,26,1,27,1,27,5,27,218,8,27,10,27,12,27,221,9,27,1,27,1,27,
+        1,27,0,0,28,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,
+        38,40,42,44,46,48,50,52,54,0,4,2,0,7,8,13,15,1,0,3,4,1,0,1,2,1,0,
+        27,31,225,0,59,1,0,0,0,2,67,1,0,0,0,4,69,1,0,0,0,6,76,1,0,0,0,8,
+        81,1,0,0,0,10,86,1,0,0,0,12,93,1,0,0,0,14,96,1,0,0,0,16,103,1,0,
+        0,0,18,106,1,0,0,0,20,113,1,0,0,0,22,116,1,0,0,0,24,122,1,0,0,0,
+        26,126,1,0,0,0,28,147,1,0,0,0,30,149,1,0,0,0,32,151,1,0,0,0,34,155,
+        1,0,0,0,36,164,1,0,0,0,38,170,1,0,0,0,40,173,1,0,0,0,42,178,1,0,
+        0,0,44,186,1,0,0,0,46,193,1,0,0,0,48,199,1,0,0,0,50,202,1,0,0,0,
+        52,207,1,0,0,0,54,215,1,0,0,0,56,58,3,2,1,0,57,56,1,0,0,0,58,61,
+        1,0,0,0,59,57,1,0,0,0,59,60,1,0,0,0,60,1,1,0,0,0,61,59,1,0,0,0,62,
+        63,5,21,0,0,63,68,3,4,2,0,64,65,5,26,0,0,65,68,3,6,3,0,66,68,3,8,
+        4,0,67,62,1,0,0,0,67,64,1,0,0,0,67,66,1,0,0,0,68,3,1,0,0,0,69,70,
+        5,34,0,0,70,71,5,5,0,0,71,74,3,10,5,0,72,75,5,10,0,0,73,75,1,0,0,
+        0,74,72,1,0,0,0,74,73,1,0,0,0,75,5,1,0,0,0,76,79,3,10,5,0,77,80,
+        5,10,0,0,78,80,1,0,0,0,79,77,1,0,0,0,79,78,1,0,0,0,80,7,1,0,0,0,
+        81,84,3,10,5,0,82,85,5,10,0,0,83,85,1,0,0,0,84,82,1,0,0,0,84,83,
+        1,0,0,0,85,9,1,0,0,0,86,87,3,14,7,0,87,88,3,12,6,0,88,11,1,0,0,0,
+        89,90,7,0,0,0,90,92,3,14,7,0,91,89,1,0,0,0,92,95,1,0,0,0,93,91,1,
+        0,0,0,93,94,1,0,0,0,94,13,1,0,0,0,95,93,1,0,0,0,96,97,3,18,9,0,97,
+        98,3,16,8,0,98,15,1,0,0,0,99,100,7,1,0,0,100,102,3,18,9,0,101,99,
+        1,0,0,0,102,105,1,0,0,0,103,101,1,0,0,0,103,104,1,0,0,0,104,17,1,
+        0,0,0,105,103,1,0,0,0,106,107,3,22,11,0,107,108,3,20,10,0,108,19,
+        1,0,0,0,109,110,7,2,0,0,110,112,3,22,11,0,111,109,1,0,0,0,112,115,
+        1,0,0,0,113,111,1,0,0,0,113,114,1,0,0,0,114,21,1,0,0,0,115,113,1,
+        0,0,0,116,120,3,28,14,0,117,121,3,24,12,0,118,121,3,26,13,0,119,
+        121,1,0,0,0,120,117,1,0,0,0,120,118,1,0,0,0,120,119,1,0,0,0,121,
+        23,1,0,0,0,122,123,5,16,0,0,123,124,3,10,5,0,124,125,5,17,0,0,125,
+        25,1,0,0,0,126,127,5,11,0,0,127,128,3,46,23,0,128,129,5,12,0,0,129,
+        27,1,0,0,0,130,148,5,35,0,0,131,148,5,36,0,0,132,148,5,34,0,0,133,
+        148,5,22,0,0,134,148,5,23,0,0,135,136,5,11,0,0,136,137,3,10,5,0,
+        137,138,5,12,0,0,138,148,1,0,0,0,139,148,3,32,16,0,140,141,3,30,
+        15,0,141,142,3,46,23,0,142,148,1,0,0,0,143,148,3,34,17,0,144,148,
+        3,40,20,0,145,148,3,50,25,0,146,148,3,52,26,0,147,130,1,0,0,0,147,
+        131,1,0,0,0,147,132,1,0,0,0,147,133,1,0,0,0,147,134,1,0,0,0,147,
+        135,1,0,0,0,147,139,1,0,0,0,147,140,1,0,0,0,147,143,1,0,0,0,147,
+        144,1,0,0,0,147,145,1,0,0,0,147,146,1,0,0,0,148,29,1,0,0,0,149,150,
+        7,3,0,0,150,31,1,0,0,0,151,152,5,16,0,0,152,153,3,46,23,0,153,154,
+        5,17,0,0,154,33,1,0,0,0,155,156,5,32,0,0,156,157,5,11,0,0,157,158,
+        3,36,18,0,158,159,5,12,0,0,159,160,3,54,27,0,160,35,1,0,0,0,161,
+        162,5,34,0,0,162,165,3,38,19,0,163,165,1,0,0,0,164,161,1,0,0,0,164,
+        163,1,0,0,0,165,37,1,0,0,0,166,167,5,18,0,0,167,169,5,34,0,0,168,
+        166,1,0,0,0,169,172,1,0,0,0,170,168,1,0,0,0,170,171,1,0,0,0,171,
+        39,1,0,0,0,172,170,1,0,0,0,173,174,5,19,0,0,174,175,3,42,21,0,175,
+        176,3,44,22,0,176,177,5,20,0,0,177,41,1,0,0,0,178,179,3,10,5,0,179,
+        180,5,9,0,0,180,181,3,10,5,0,181,43,1,0,0,0,182,183,5,18,0,0,183,
+        185,3,42,21,0,184,182,1,0,0,0,185,188,1,0,0,0,186,184,1,0,0,0,186,
+        187,1,0,0,0,187,45,1,0,0,0,188,186,1,0,0,0,189,190,3,10,5,0,190,
+        191,3,48,24,0,191,194,1,0,0,0,192,194,1,0,0,0,193,189,1,0,0,0,193,
+        192,1,0,0,0,194,47,1,0,0,0,195,196,5,18,0,0,196,198,3,10,5,0,197,
+        195,1,0,0,0,198,201,1,0,0,0,199,197,1,0,0,0,199,200,1,0,0,0,200,
+        49,1,0,0,0,201,199,1,0,0,0,202,203,5,33,0,0,203,204,5,11,0,0,204,
+        205,3,10,5,0,205,206,5,12,0,0,206,51,1,0,0,0,207,208,5,24,0,0,208,
+        209,3,10,5,0,209,213,3,54,27,0,210,211,5,25,0,0,211,214,3,54,27,
+        0,212,214,1,0,0,0,213,210,1,0,0,0,213,212,1,0,0,0,214,53,1,0,0,0,
+        215,219,5,19,0,0,216,218,3,2,1,0,217,216,1,0,0,0,218,221,1,0,0,0,
+        219,217,1,0,0,0,219,220,1,0,0,0,220,222,1,0,0,0,221,219,1,0,0,0,
+        222,223,5,20,0,0,223,55,1,0,0,0,17,59,67,74,79,84,93,103,113,120,
+        147,164,170,186,193,199,213,219
     ]
 
 class MonkeyParser ( Parser ):
@@ -231,14 +232,6 @@ class MonkeyParser ( Parser ):
                 return self.getTypedRuleContext(MonkeyParser.StatementContext,i)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterProgramAST" ):
-                listener.enterProgramAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitProgramAST" ):
-                listener.exitProgramAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitProgramAST" ):
                 return visitor.visitProgramAST(self)
@@ -301,14 +294,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.ExpressionStatementContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExprsStatStatAST" ):
-                listener.enterExprsStatStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExprsStatStatAST" ):
-                listener.exitExprsStatStatAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExprsStatStatAST" ):
                 return visitor.visitExprsStatStatAST(self)
@@ -328,14 +313,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.LetStatementContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterLetStatAST" ):
-                listener.enterLetStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitLetStatAST" ):
-                listener.exitLetStatAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitLetStatAST" ):
                 return visitor.visitLetStatAST(self)
@@ -354,14 +331,6 @@ class MonkeyParser ( Parser ):
         def returnStatement(self):
             return self.getTypedRuleContext(MonkeyParser.ReturnStatementContext,0)
 
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterRtrnStatAST" ):
-                listener.enterRtrnStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitRtrnStatAST" ):
-                listener.exitRtrnStatAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitRtrnStatAST" ):
@@ -446,14 +415,6 @@ class MonkeyParser ( Parser ):
         def SEMICOLON(self):
             return self.getToken(MonkeyParser.SEMICOLON, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterIdEqLetStatAST" ):
-                listener.enterIdEqLetStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitIdEqLetStatAST" ):
-                listener.exitIdEqLetStatAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIdEqLetStatAST" ):
                 return visitor.visitIdEqLetStatAST(self)
@@ -525,14 +486,6 @@ class MonkeyParser ( Parser ):
         def SEMICOLON(self):
             return self.getToken(MonkeyParser.SEMICOLON, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExprsRtrnStatAST" ):
-                listener.enterExprsRtrnStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExprsRtrnStatAST" ):
-                listener.exitExprsRtrnStatAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExprsRtrnStatAST" ):
                 return visitor.visitExprsRtrnStatAST(self)
@@ -599,14 +552,6 @@ class MonkeyParser ( Parser ):
 
         def SEMICOLON(self):
             return self.getToken(MonkeyParser.SEMICOLON, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExprsExprsStatAST" ):
-                listener.enterExprsExprsStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExprsExprsStatAST" ):
-                listener.exitExprsExprsStatAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExprsExprsStatAST" ):
@@ -675,14 +620,6 @@ class MonkeyParser ( Parser ):
         def comparison(self):
             return self.getTypedRuleContext(MonkeyParser.ComparisonContext,0)
 
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterAddExprsExprsAST" ):
-                listener.enterAddExprsExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitAddExprsExprsAST" ):
-                listener.exitAddExprsExprsAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAddExprsExprsAST" ):
@@ -767,14 +704,6 @@ class MonkeyParser ( Parser ):
             else:
                 return self.getToken(MonkeyParser.EQUALE, i)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterEqlsComparsAST" ):
-                listener.enterEqlsComparsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitEqlsComparsAST" ):
-                listener.exitEqlsComparsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitEqlsComparsAST" ):
                 return visitor.visitEqlsComparsAST(self)
@@ -848,14 +777,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.AdditionFactorContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMultAddExprsAST" ):
-                listener.enterMultAddExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMultAddExprsAST" ):
-                listener.exitMultAddExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitMultAddExprsAST" ):
                 return visitor.visitMultAddExprsAST(self)
@@ -923,14 +844,6 @@ class MonkeyParser ( Parser ):
                 return self.getTokens(MonkeyParser.SUB)
             else:
                 return self.getToken(MonkeyParser.SUB, i)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMultAddFctrAST" ):
-                listener.enterMultAddFctrAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMultAddFctrAST" ):
-                listener.exitMultAddFctrAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitMultAddFctrAST" ):
@@ -1005,14 +918,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.MultiplicationFactorContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterElmtMultExprsAST" ):
-                listener.enterElmtMultExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitElmtMultExprsAST" ):
-                listener.exitElmtMultExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitElmtMultExprsAST" ):
                 return visitor.visitElmtMultExprsAST(self)
@@ -1080,14 +985,6 @@ class MonkeyParser ( Parser ):
                 return self.getTokens(MonkeyParser.DIV)
             else:
                 return self.getToken(MonkeyParser.DIV, i)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMultDivElmtMultFctrAST" ):
-                listener.enterMultDivElmtMultFctrAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMultDivElmtMultFctrAST" ):
-                listener.exitMultDivElmtMultFctrAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitMultDivElmtMultFctrAST" ):
@@ -1165,14 +1062,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.CallExpressionContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPrmtElmtExprsAST" ):
-                listener.enterPrmtElmtExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPrmtElmtExprsAST" ):
-                listener.exitPrmtElmtExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPrmtElmtExprsAST" ):
                 return visitor.visitPrmtElmtExprsAST(self)
@@ -1247,14 +1136,6 @@ class MonkeyParser ( Parser ):
         def BRACKETSCL(self):
             return self.getToken(MonkeyParser.BRACKETSCL, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterBrckExprsElmtAccsAST" ):
-                listener.enterBrckExprsElmtAccsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitBrckExprsElmtAccsAST" ):
-                listener.exitBrckExprsElmtAccsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitBrckExprsElmtAccsAST" ):
                 return visitor.visitBrckExprsElmtAccsAST(self)
@@ -1316,14 +1197,6 @@ class MonkeyParser ( Parser ):
         def PCLOSE(self):
             return self.getToken(MonkeyParser.PCLOSE, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPrthsCllExprsAST" ):
-                listener.enterPrthsCllExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPrthsCllExprsAST" ):
-                listener.exitPrthsCllExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPrthsCllExprsAST" ):
                 return visitor.visitPrthsCllExprsAST(self)
@@ -1380,14 +1253,6 @@ class MonkeyParser ( Parser ):
         def INT(self):
             return self.getToken(MonkeyParser.INT, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterIntPrmtvExprsAST" ):
-                listener.enterIntPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitIntPrmtvExprsAST" ):
-                listener.exitIntPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIntPrmtvExprsAST" ):
                 return visitor.visitIntPrmtvExprsAST(self)
@@ -1403,14 +1268,6 @@ class MonkeyParser ( Parser ):
 
         def FALSE(self):
             return self.getToken(MonkeyParser.FALSE, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFalsPrmtvExprsAST" ):
-                listener.enterFalsPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFalsPrmtvExprsAST" ):
-                listener.exitFalsPrmtvExprsAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFalsPrmtvExprsAST" ):
@@ -1429,14 +1286,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.HashLiteralContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterHshLitPrmtvExprsAST" ):
-                listener.enterHshLitPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitHshLitPrmtvExprsAST" ):
-                listener.exitHshLitPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitHshLitPrmtvExprsAST" ):
                 return visitor.visitHshLitPrmtvExprsAST(self)
@@ -1452,14 +1301,6 @@ class MonkeyParser ( Parser ):
 
         def TRUE(self):
             return self.getToken(MonkeyParser.TRUE, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterTrPrmtAST" ):
-                listener.enterTrPrmtAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitTrPrmtAST" ):
-                listener.exitTrPrmtAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitTrPrmtAST" ):
@@ -1478,14 +1319,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.FunctionLiteralContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFnctnLitPrmtvExprsAST" ):
-                listener.enterFnctnLitPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFnctnLitPrmtvExprsAST" ):
-                listener.exitFnctnLitPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFnctnLitPrmtvExprsAST" ):
                 return visitor.visitFnctnLitPrmtvExprsAST(self)
@@ -1502,14 +1335,6 @@ class MonkeyParser ( Parser ):
         def printExpression(self):
             return self.getTypedRuleContext(MonkeyParser.PrintExpressionContext,0)
 
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPrntExprsPrmtvExprsAST" ):
-                listener.enterPrntExprsPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPrntExprsPrmtvExprsAST" ):
-                listener.exitPrntExprsPrmtvExprsAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPrntExprsPrmtvExprsAST" ):
@@ -1528,14 +1353,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.IfExpressionContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterIfExprsPrmtvExprsAST" ):
-                listener.enterIfExprsPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitIfExprsPrmtvExprsAST" ):
-                listener.exitIfExprsPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIfExprsPrmtvExprsAST" ):
                 return visitor.visitIfExprsPrmtvExprsAST(self)
@@ -1553,14 +1370,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.ArrayLiteralContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArryLitPrmtvExprsAST" ):
-                listener.enterArryLitPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArryLitPrmtvExprsAST" ):
-                listener.exitArryLitPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArryLitPrmtvExprsAST" ):
                 return visitor.visitArryLitPrmtvExprsAST(self)
@@ -1576,14 +1385,6 @@ class MonkeyParser ( Parser ):
 
         def ID(self):
             return self.getToken(MonkeyParser.ID, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterIdPrmtvAST" ):
-                listener.enterIdPrmtvAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitIdPrmtvAST" ):
-                listener.exitIdPrmtvAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIdPrmtvAST" ):
@@ -1606,14 +1407,6 @@ class MonkeyParser ( Parser ):
         def PCLOSE(self):
             return self.getToken(MonkeyParser.PCLOSE, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPrthsPrmtvExprsAST" ):
-                listener.enterPrthsPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPrthsPrmtvExprsAST" ):
-                listener.exitPrthsPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPrthsPrmtvExprsAST" ):
                 return visitor.visitPrthsPrmtvExprsAST(self)
@@ -1634,14 +1427,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.ExpressionListContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArryFnctnPrmtvExprsAST" ):
-                listener.enterArryFnctnPrmtvExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArryFnctnPrmtvExprsAST" ):
-                listener.exitArryFnctnPrmtvExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArryFnctnPrmtvExprsAST" ):
                 return visitor.visitArryFnctnPrmtvExprsAST(self)
@@ -1657,14 +1442,6 @@ class MonkeyParser ( Parser ):
 
         def STRING(self):
             return self.getToken(MonkeyParser.STRING, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterStrnPrmtvExprgAST" ):
-                listener.enterStrnPrmtvExprgAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitStrnPrmtvExprgAST" ):
-                listener.exitStrnPrmtvExprgAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitStrnPrmtvExprgAST" ):
@@ -1798,14 +1575,6 @@ class MonkeyParser ( Parser ):
         def getRuleIndex(self):
             return MonkeyParser.RULE_arrayFunctions
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterArrayFunctions" ):
-                listener.enterArrayFunctions(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitArrayFunctions" ):
-                listener.exitArrayFunctions(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArrayFunctions" ):
                 return visitor.visitArrayFunctions(self)
@@ -1868,14 +1637,6 @@ class MonkeyParser ( Parser ):
 
         def BRACKETSCL(self):
             return self.getToken(MonkeyParser.BRACKETSCL, 0)
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterBrckExprsLstarryLitAST" ):
-                listener.enterBrckExprsLstarryLitAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitBrckExprsLstarryLitAST" ):
-                listener.exitBrckExprsLstarryLitAST(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitBrckExprsLstarryLitAST" ):
@@ -1943,14 +1704,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.BlockStatementContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterFnctnPrmtsBlckStatFnctnLitAST" ):
-                listener.enterFnctnPrmtsBlckStatFnctnLitAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitFnctnPrmtsBlckStatFnctnLitAST" ):
-                listener.exitFnctnPrmtsBlckStatFnctnLitAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFnctnPrmtsBlckStatFnctnLitAST" ):
                 return visitor.visitFnctnPrmtsBlckStatFnctnLitAST(self)
@@ -2014,14 +1767,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.MoreIdentifiersContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMrIdsFnctnPrmtsAST" ):
-                listener.enterMrIdsFnctnPrmtsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMrIdsFnctnPrmtsAST" ):
-                listener.exitMrIdsFnctnPrmtsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitMrIdsFnctnPrmtsAST" ):
                 return visitor.visitMrIdsFnctnPrmtsAST(self)
@@ -2037,10 +1782,20 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.MrIdsFnctnPrmtsASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 161
-            self.match(MonkeyParser.ID)
-            self.state = 162
-            self.moreIdentifiers()
+            self.state = 164
+            self._errHandler.sync(self)
+            token = self._input.LA(1)
+            if token in [MonkeyParser.ID]:
+                self.state = 161
+                self.match(MonkeyParser.ID)
+                self.state = 162
+                self.moreIdentifiers()
+                pass
+            elif token in [MonkeyParser.PCLOSE]:
+                pass
+            else:
+                raise NoViableAltException(self)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2084,14 +1839,6 @@ class MonkeyParser ( Parser ):
             else:
                 return self.getToken(MonkeyParser.ID, i)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterCmmaIdMrIdsAST" ):
-                listener.enterCmmaIdMrIdsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitCmmaIdMrIdsAST" ):
-                listener.exitCmmaIdMrIdsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitCmmaIdMrIdsAST" ):
                 return visitor.visitCmmaIdMrIdsAST(self)
@@ -2108,15 +1855,15 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.CmmaIdMrIdsASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 168
+            self.state = 170
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==MonkeyParser.COMMA:
-                self.state = 164
+                self.state = 166
                 self.match(MonkeyParser.COMMA)
-                self.state = 165
+                self.state = 167
                 self.match(MonkeyParser.ID)
-                self.state = 170
+                self.state = 172
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -2163,14 +1910,6 @@ class MonkeyParser ( Parser ):
         def CURLYCL(self):
             return self.getToken(MonkeyParser.CURLYCL, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterHshCtntMrHshCtntHshLitAST" ):
-                listener.enterHshCtntMrHshCtntHshLitAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitHshCtntMrHshCtntHshLitAST" ):
-                listener.exitHshCtntMrHshCtntHshLitAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitHshCtntMrHshCtntHshLitAST" ):
                 return visitor.visitHshCtntMrHshCtntHshLitAST(self)
@@ -2186,13 +1925,13 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.HshCtntMrHshCtntHshLitASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 171
-            self.match(MonkeyParser.CURLYOP)
-            self.state = 172
-            self.hashContent()
             self.state = 173
-            self.moreHashContent()
+            self.match(MonkeyParser.CURLYOP)
             self.state = 174
+            self.hashContent()
+            self.state = 175
+            self.moreHashContent()
+            self.state = 176
             self.match(MonkeyParser.CURLYCL)
         except RecognitionException as re:
             localctx.exception = re
@@ -2235,14 +1974,6 @@ class MonkeyParser ( Parser ):
         def COLON(self):
             return self.getToken(MonkeyParser.COLON, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExprsClnExprsHshCtntAST" ):
-                listener.enterExprsClnExprsHshCtntAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExprsClnExprsHshCtntAST" ):
-                listener.exitExprsClnExprsHshCtntAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExprsClnExprsHshCtntAST" ):
                 return visitor.visitExprsClnExprsHshCtntAST(self)
@@ -2258,11 +1989,11 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.ExprsClnExprsHshCtntASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 176
-            self.expression()
-            self.state = 177
-            self.match(MonkeyParser.COLON)
             self.state = 178
+            self.expression()
+            self.state = 179
+            self.match(MonkeyParser.COLON)
+            self.state = 180
             self.expression()
         except RecognitionException as re:
             localctx.exception = re
@@ -2308,14 +2039,6 @@ class MonkeyParser ( Parser ):
                 return self.getTypedRuleContext(MonkeyParser.HashContentContext,i)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterCmmaHshCtntMrHshCtntAST" ):
-                listener.enterCmmaHshCtntMrHshCtntAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitCmmaHshCtntMrHshCtntAST" ):
-                listener.exitCmmaHshCtntMrHshCtntAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitCmmaHshCtntMrHshCtntAST" ):
                 return visitor.visitCmmaHshCtntMrHshCtntAST(self)
@@ -2332,15 +2055,15 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.CmmaHshCtntMrHshCtntASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 184
+            self.state = 186
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==MonkeyParser.COMMA:
-                self.state = 180
+                self.state = 182
                 self.match(MonkeyParser.COMMA)
-                self.state = 181
+                self.state = 183
                 self.hashContent()
-                self.state = 186
+                self.state = 188
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -2377,14 +2100,6 @@ class MonkeyParser ( Parser ):
             self.copyFrom(ctx)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterEmptExprsLstASTAST" ):
-                listener.enterEmptExprsLstASTAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitEmptExprsLstASTAST" ):
-                listener.exitEmptExprsLstASTAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitEmptExprsLstASTAST" ):
                 return visitor.visitEmptExprsLstASTAST(self)
@@ -2405,14 +2120,6 @@ class MonkeyParser ( Parser ):
             return self.getTypedRuleContext(MonkeyParser.MoreExpressionsContext,0)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExprsMrExprsExprsLstAST" ):
-                listener.enterExprsMrExprsExprsLstAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExprsMrExprsExprsLstAST" ):
-                listener.exitExprsMrExprsExprsLstAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExprsMrExprsExprsLstAST" ):
                 return visitor.visitExprsMrExprsExprsLstAST(self)
@@ -2426,15 +2133,15 @@ class MonkeyParser ( Parser ):
         localctx = MonkeyParser.ExpressionListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 46, self.RULE_expressionList)
         try:
-            self.state = 191
+            self.state = 193
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
                 localctx = MonkeyParser.ExprsMrExprsExprsLstASTContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 187
+                self.state = 189
                 self.expression()
-                self.state = 188
+                self.state = 190
                 self.moreExpressions()
                 pass
 
@@ -2489,14 +2196,6 @@ class MonkeyParser ( Parser ):
                 return self.getTypedRuleContext(MonkeyParser.ExpressionContext,i)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterCmmaExprsMrExprsAST" ):
-                listener.enterCmmaExprsMrExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitCmmaExprsMrExprsAST" ):
-                listener.exitCmmaExprsMrExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitCmmaExprsMrExprsAST" ):
                 return visitor.visitCmmaExprsMrExprsAST(self)
@@ -2512,18 +2211,18 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.CmmaExprsMrExprsASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 197
+            self.state = 199
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 193
+                    self.state = 195
                     self.match(MonkeyParser.COMMA)
-                    self.state = 194
+                    self.state = 196
                     self.expression() 
-                self.state = 199
+                self.state = 201
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,13,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,14,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -2567,14 +2266,6 @@ class MonkeyParser ( Parser ):
         def PCLOSE(self):
             return self.getToken(MonkeyParser.PCLOSE, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPtsExprsPrntExprsAST" ):
-                listener.enterPtsExprsPrntExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPtsExprsPrntExprsAST" ):
-                listener.exitPtsExprsPrntExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPtsExprsPrntExprsAST" ):
                 return visitor.visitPtsExprsPrntExprsAST(self)
@@ -2590,13 +2281,13 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.PtsExprsPrntExprsASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 200
-            self.match(MonkeyParser.PUTS)
-            self.state = 201
-            self.match(MonkeyParser.POPEN)
             self.state = 202
-            self.expression()
+            self.match(MonkeyParser.PUTS)
             self.state = 203
+            self.match(MonkeyParser.POPEN)
+            self.state = 204
+            self.expression()
+            self.state = 205
             self.match(MonkeyParser.PCLOSE)
         except RecognitionException as re:
             localctx.exception = re
@@ -2644,14 +2335,6 @@ class MonkeyParser ( Parser ):
         def ELSE(self):
             return self.getToken(MonkeyParser.ELSE, 0)
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterIfExprsBlckStatElsBlckStatIdExprsAST" ):
-                listener.enterIfExprsBlckStatElsBlckStatIdExprsAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitIfExprsBlckStatElsBlckStatIdExprsAST" ):
-                listener.exitIfExprsBlckStatElsBlckStatIdExprsAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIfExprsBlckStatElsBlckStatIdExprsAST" ):
                 return visitor.visitIfExprsBlckStatElsBlckStatIdExprsAST(self)
@@ -2667,19 +2350,19 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.IfExprsBlckStatElsBlckStatIdExprsASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 205
-            self.match(MonkeyParser.IF)
-            self.state = 206
-            self.expression()
             self.state = 207
+            self.match(MonkeyParser.IF)
+            self.state = 208
+            self.expression()
+            self.state = 209
             self.blockStatement()
-            self.state = 211
+            self.state = 213
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [MonkeyParser.ELSE]:
-                self.state = 208
+                self.state = 210
                 self.match(MonkeyParser.ELSE)
-                self.state = 209
+                self.state = 211
                 self.blockStatement()
                 pass
             elif token in [MonkeyParser.EOF, MonkeyParser.MULT, MonkeyParser.DIV, MonkeyParser.ADD, MonkeyParser.SUB, MonkeyParser.GREATERTHAN, MonkeyParser.LOWERTHAN, MonkeyParser.COLON, MonkeyParser.SEMICOLON, MonkeyParser.POPEN, MonkeyParser.PCLOSE, MonkeyParser.GTE, MonkeyParser.LTE, MonkeyParser.EQUALE, MonkeyParser.BRACKETSOP, MonkeyParser.BRACKETSCL, MonkeyParser.COMMA, MonkeyParser.CURLYOP, MonkeyParser.CURLYCL, MonkeyParser.LET, MonkeyParser.TRUE, MonkeyParser.FALSE, MonkeyParser.IF, MonkeyParser.RETURN, MonkeyParser.LEN, MonkeyParser.FIRST, MonkeyParser.LAST, MonkeyParser.REST, MonkeyParser.PUSH, MonkeyParser.FN, MonkeyParser.PUTS, MonkeyParser.ID, MonkeyParser.INT, MonkeyParser.STRING]:
@@ -2730,14 +2413,6 @@ class MonkeyParser ( Parser ):
                 return self.getTypedRuleContext(MonkeyParser.StatementContext,i)
 
 
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterStntBlckStatAST" ):
-                listener.enterStntBlckStatAST(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitStntBlckStatAST" ):
-                listener.exitStntBlckStatAST(self)
-
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitStntBlckStatAST" ):
                 return visitor.visitStntBlckStatAST(self)
@@ -2754,19 +2429,19 @@ class MonkeyParser ( Parser ):
         try:
             localctx = MonkeyParser.StntBlckStatASTContext(self, localctx)
             self.enterOuterAlt(localctx, 1)
-            self.state = 213
+            self.state = 215
             self.match(MonkeyParser.CURLYOP)
-            self.state = 217
+            self.state = 219
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << MonkeyParser.POPEN) | (1 << MonkeyParser.BRACKETSOP) | (1 << MonkeyParser.CURLYOP) | (1 << MonkeyParser.LET) | (1 << MonkeyParser.TRUE) | (1 << MonkeyParser.FALSE) | (1 << MonkeyParser.IF) | (1 << MonkeyParser.RETURN) | (1 << MonkeyParser.LEN) | (1 << MonkeyParser.FIRST) | (1 << MonkeyParser.LAST) | (1 << MonkeyParser.REST) | (1 << MonkeyParser.PUSH) | (1 << MonkeyParser.FN) | (1 << MonkeyParser.PUTS) | (1 << MonkeyParser.ID) | (1 << MonkeyParser.INT) | (1 << MonkeyParser.STRING))) != 0):
-                self.state = 214
+                self.state = 216
                 self.statement()
-                self.state = 219
+                self.state = 221
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 220
+            self.state = 222
             self.match(MonkeyParser.CURLYCL)
         except RecognitionException as re:
             localctx.exception = re
