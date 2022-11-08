@@ -439,7 +439,7 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(ctx.expression())
 
         except:
-            raise Exception("ERROR: la impresión no se puede realizar.")
+            raise Exception("ERROR: la impresión no se puede realizar.  ")
 
         return None
 
