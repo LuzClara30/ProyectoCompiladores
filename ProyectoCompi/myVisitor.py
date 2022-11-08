@@ -55,7 +55,7 @@ class myVisitor(MonkeyParserVisitor):
             self.visit(ctx.expression())
             self.mainRepl.insertData(ctx.ID().getText(), self.mainRepl.stackPop())
         except:
-            print("An exception occurred")
+            print("ERROR: la expresión es incompatible para la variable.")
 
         return None
 
