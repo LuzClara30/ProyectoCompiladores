@@ -54,7 +54,7 @@ class myVisitor(MonkeyParserVisitor):
         try:
             self.visit(ctx.expression())
             self.mainRepl.insertData(ctx.ID().getText(), self.mainRepl.stackPop())
-        except:
+        except Exception as e:
             print("ERROR: la expresión es incompatible para la variable.")
 
         return None
@@ -157,6 +157,7 @@ class myVisitor(MonkeyParserVisitor):
                 self.visit(ctx.children[i + 1])
                 op2 = self.mainRepl.stackPop()
                 op1 = self.mainRepl.stackPop()
+
                 if TerminalNodeImpl(oper).getSymbol().symbol.type == MonkeyParser.ADD and isinstance(op1,
                                                                                                      int) and isinstance(
                         op2, int):
